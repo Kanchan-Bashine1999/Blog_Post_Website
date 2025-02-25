@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog post website</title>
+    <meta name="description" content="Exploring the world, one post at a time.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Sets Background Color for Entire Page */
+        body {
+        background-color: #e0eef7; /* Light gray background */
+        color: #333; /* Dark gray text for readability */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+        background-color: #007BFF; /* Primary blue color */
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between; /* Spreads items */
+        align-items: center;
+        position: fixed; /* Fixes navbar at the top */
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensures navbar stays above other content */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+        }
+
+
+        /* Blog Section Styling */
+        .blog-container {
+        display: flex;
+        justify-content: center; /* Centers the blogs horizontally */
+        align-items: center; /* Aligns them vertically (if needed) */
+        gap: 20px; /* Space between blogs */
+        padding: 20px;
+        flex-wrap: wrap; /* Allows responsiveness */
+        }
+
+        /* Blog Post Styling */
+        .blog-post {
+        background: white;
+        padding: 15px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 0 0 auto; /* Prevents resizing */
+        }
+
+        /* Blog Post Images */
+        .blog-post img {
+        width: 100%;
+        border-radius: 5px;
+        }
+
+        /* Blog Titles */
+        .blog-post h3 {
+         color: #007BFF;
+        }
+
+        /* Read More Button */
+        .blog-post a {
+        display: inline-block;
+        margin-top: 10px;
+         padding: 8px 12px;
+        background: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        }
+
+        .blog-post a:hover {
+        background: #0056b3;
+    }
+
+        /* Centering the Article */
+    article {
+    background-color: #b6e9f0;
+    padding: 20px;
+    margin: 100px auto; /* Centers horizontally & adds space below navbar */
+    width: 60%; /* Adjust width for better readability */
+    max-width: 800px; /* Prevents overly wide content */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center; /* Centers text inside the article */
+    }
+
+    /* Centering the Heading */
+    article h1 {
+    color: #007BFF;
+    font-size: 26px;
+    margin-bottom: 15px;
+    }
+
+    /* Formatting Paragraph */
+    article p {
+    color: #333;
+    font-size: 16px;
+    text-align: justify; /* Keeps text readable */
+    }
+    /* Navigation Bar Styling */
+    nav {
+    background-color: #007BFF; /* Blue background */
+    padding: 15px;
+    text-align: center;
+    position: fixed; /* Keeps nav at top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navigation Links */
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+
+    /* Icons in Navigation */
+    nav a i {
+    margin-right: 8px; /* Space between icon and text */
+    }
+
+    /* Hover Effect */
+    nav a:hover {
+    color: #FFD700; /* Golden color on hover */
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        background: white; /* White content area */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer Styling */
+footer {
+    background: #007BFF; /* Beautiful Blue Background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Footer Links */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+footer a:hover {
+    color: #FFD700; /* Golden color on hover */
+}
+
+/* Social Icons */
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <!--navigation Bar-->
+    <nav>
+        <a href="home.html"><i class="fas fa-home"></i>Home</a>
+        <a href=Blogpost.html><i class="fas fa-pen-nib"></i>Blog Posts</a>
+        <a href="aboutme.html"><i class="fas fa-user"></i>About Me</a>
+        <a href="contactus.html"><i class="fas fa-phone"></i>Contact</a>
+    </nav>
+        <article>
+            <h1>Epic Journeys 🏔️🌅</h1>
+
+                <p>Baba Neem Karoli, also known as Neem Karoli Baba, was a revered Hindu saint and spiritual leader. His ashrams are
+                located in various places, but the most famous one is Kainchi Dham in Nainital, Uttarakhand. Many devotees,
+                including celebrities like Steve Jobs and Mark Zuckerberg, have visited this sacred place seeking blessings and
+                inner peace
+                Kainchi is a beautiful secluded mountain ashram located in the Kumaon Hills in Uttarakand. The first temple was
+                inaugurated in June 1964. It is approximately 38 km from Nainital. Many hundreds of people visit the temples
+                here every day, in season.
+
+                Rules are strictly enforced and individuals staying at the ashram are required to participate in morning and
+                evening arati. The ashram is closed for a large portion of the year, because it becomes very cold.
+            </p>
+        
+        
+
+    
+            <h3>Best Time to Visit</h3>
+            <ul>
+                <li>May to June (for the annual Bhandara & festival)</li>
+                <li>September to November (pleasant weather)</li>
+                <li>Avoid monsoon season (July-August) due to heavy rains.</li>
+            </ul>
+
+
+        <br>
+        <h2>Best Routes to Reach Kainchi Dham </h2>
+        <p>There are multiple ways to reach kainchi dham from your city, depending on your budget, time constraints, and
+        travel preferences.Let's break down the option for travelers looking to save time.</p>
+        <br>
+        <br>
+</article>
+    <!--first blog-->
+    <div class="blog-container">
+        <div class="blog-post">
+            <div class="blog-img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.Es9K-uV-srh-gkpSuc0j-wHaFj&pid=Api&P=0&h=180"
+                    alt="Pantnagar Airport">
+            </div>
+            <div class="blog-content">
+                <h3><strong>Flights</strong> from Nagpur to Pantnagar</h3>
+                <p>Pantnagar Airport(PGH) is the airport to <b>Kainchi Dham</b>about 70km away. While there are no
+                    direct flights from Nagpur to Pantnagar, you can book a connecting flight via Delhi or Lucknow.After
+                    landing at Pantnagar, you can hire a taxi or a private vehicle to reach Kainchi Dham in about two
+                    hours.
+                </p>
+                <a href="flight.html">Read More</a>
+            </div>
+        </div>
+
+        <br>
+        <!--second blog-->
+        <div class="blog-post">
+            <div class="blog-img">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.pzdZaE7ynTdshEOek82p0AHaD5&pid=Api&P=0&h=180"
+                    alt="Kathgodam station">
+            </div>
+            <div class="blog-content">
+                <h3>Train Journey from Nagpur to Kathgodam </h3>
+                <p>Travelling by tain is a cost-effective and comfertabl option. follow these steps:
+                    1.Train to Kathgodam:Board a train from Nagpur to Kathgodam (via Lucknow or Delhi) popular train
+                    includes:
+                <ul>
+                    <li>Sampark Kranti Express (Connect via Delhi)</li>
+                    <li>Lucknow Mail (Connect via Lucknow)</li>
+                </ul>
+                2.From Kathgodam to Kainchi Dham: The ashram is 38 kilometers from Kathgodam. Hire a taxi or shared a
+                jeep for 1-2 hours drive.
+                </p>
+                <a href="rail.html">Read More</a>
+            </div>
+        </div>
+    
+        <br>
+        <div class="blog-post">
+            <div class="blog-img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.A4kNwsc-UI_qnEqaKeU3XAHaE7&pid=Api&P=0&h=180" alt="By Car">
+            </div>
+            <div class="blog-content">
+                <h3>Kainchi Dham Tour by Car</h3>
+                <p>Day1: Delhi to Nainital
+                    <br>
+                    Day2: Nainital to Khainchi Dham
+                    <br>
+                    Day3: Nainital to Delhi
+                </p>
+                <a href="car.html">Read More</a>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <article>
+            <h1>🌍 Welcome to My Travel Blog!</h1>
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Coder</strong>, an avid traveler and adventure seeker who loves exploring new
+                destinations and sharing unique experiences. Whether it's trekking through the mountains, discovering
+                hidden beaches, or experiencing different cultures, traveling is my passion.</p>
+
+            <h2>Why This Blog?</h2>
+            <p>This blog is a space where I document my journeys, share travel tips, and provide insights into the most
+                breathtaking destinations. My goal is to inspire fellow travelers, help them plan their adventures, and
+                uncover the hidden gems of the world.</p>
+
+            <h2>What to Expect?</h2>
+            <ul>
+                <li>📍 Travel Guides</li>
+                <li>✈️ Travel Tips</li>
+                <li>🏝️ Hidden Destinations</li>
+                <li>📸 Travel Photography</li>
+            </ul>
+
+            <p>Join me on this exciting adventure as we explore the world together! 🌎✨</p>
+
+        </article>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2025 Travel Blog | All Rights Reserved</p>
+            <p>
+                <a href="aboutme.html">About Me</a> |
+                <a href="contactus.html">Contact</a> |
+            </p>
+        </footer>
+</body>
+
+</html>
